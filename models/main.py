@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 mlflow.set_tracking_uri(uri="http://127.0.0.1:8080")
 
 # Create a new MLflow Experiment
-mlflow.set_experiment("MLflow Quickstart")
+mlflow.set_experiment("MLflow Quickstart1")
 
 # Load the Iris dataset
 X, y = datasets.load_iris(return_X_y=True)
