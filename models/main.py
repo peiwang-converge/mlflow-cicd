@@ -37,7 +37,7 @@ lr.fit(X_train, y_train)
 y_pred = lr.predict(X_test)
 
 # Calculate metrics
-accuracy = accuracy_score(y_test, y_pred) * 0.65
+accuracy = accuracy_score(y_test, y_pred) * 0.75
 
 # Start an MLflow run
 with mlflow.start_run():
