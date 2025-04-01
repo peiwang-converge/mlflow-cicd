@@ -38,3 +38,18 @@ jobs:
           cd models
           python3 main.py
           
+      
+      
+  Deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Deploy to Dev
+        run: echo "Deploy to Dev"
+
+      - name: Deploy to Test
+        run: echo "Deploy to Test"
+        
+        
+      - name: Deploy to Prod
+        run: echo "Deploy to Prod"       
