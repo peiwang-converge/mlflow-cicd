@@ -39,3 +39,5 @@ jobs:
           source myenv/bin/activate
           ls 
           pwd
+          cd models
+          python3 main.py
