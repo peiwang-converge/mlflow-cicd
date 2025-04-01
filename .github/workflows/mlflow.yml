@@ -28,16 +28,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a set of commands using the runners shell.
-      - name: Setup Python3 Env
+      # Runs the model and upload to mlflow
+      - name: Run the model and upload to mlflow for tracking
         run: |
           python3 -m venv myenv
           source myenv/bin/activate
           pip install mlflow
           pip install scikit-learn
-          
-       # Runs the model and upload to mlflow
-      - name: Run the model and upload to mlflow for tracking
-        run: |         
           cd models
           python3 main.py
+          
