@@ -2,7 +2,7 @@
 description: this is a test...
 ---
 
-pwd
-ls -la
+which directory I am in?
+list all files under current direcotry
 explain the codebase
 open a pull request
