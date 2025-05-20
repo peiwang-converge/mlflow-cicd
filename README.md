@@ -51,6 +51,16 @@ The project includes a GitHub Actions workflow that:
 2. Trains the model
 3. Deploys the model to Dev, Test, and Prod environments
 
+## Monitoring and Maintenance
+
+After deploying your model, you can monitor its performance using MLflow's tracking capabilities:
+
+```
+mlflow ui --port 8080
+```
+
+Regularly check model metrics and consider retraining when performance degrades.
+
 ## License
 
 MIT
